@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/roundshapelayout"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/textLayout"
+        android:layout_width="@dimen/x300"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/x10"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Views.AnyTextView
+            android:id="@+id/txt_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginRight="@dimen/x20"
+            android:alpha="0.7"
+            android:gravity="center"
+            android:text="title"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:typeface="Roboto-Regular.ttf" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x1"
+            android:layout_marginTop="@dimen/x10"
+            android:alpha="0.2"
+            android:background="@color/black" />
+
+
+        <Views.AnyTextView
+            android:id="@+id/txt_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/x25"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginRight="@dimen/x20"
+            android:layout_marginTop="@dimen/x25"
+            android:alpha="0.7"
+            android:gravity="center"
+            android:text="detail"
+            android:textColor="@color/black"
+            android:textSize="@dimen/x17"
+            app:typeface="Roboto-Regular.ttf" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:alpha="0.2"
+        android:visibility="gone"
+        android:background="@color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/textLayout"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/x5"
+            android:layout_marginRight="@dimen/x7"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:text="Yes"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="@dimen/x16" />
+
+
+        <View
+            android:layout_width="@dimen/x1"
+            android:layout_height="fill_parent"
+            android:alpha="0.1"
+            android:background="@color/black" />
+
+
+        <Button
+            android:id="@+id/btn_No"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/x5"
+            android:layout_marginLeft="@dimen/x7"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:text="No"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="@dimen/x16" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

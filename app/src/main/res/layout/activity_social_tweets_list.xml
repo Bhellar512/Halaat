@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.halaat.halaat.Activity.SocialTweetsListActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Views.AnyTextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x55"
+            android:background="#55ACEF"
+            android:gravity="center"
+            android:text="Twitter Tweets"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x20"
+            app:typeface="@string/font_bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x45"
+            android:layout_margin="20dp"
+            android:layout_marginTop="@dimen/x6"
+            android:orientation="horizontal">
+
+            <helpers.AutoCompleteLocation
+                android:id="@+id/autocomplete"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/location"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textSize="@dimen/x15" />
+
+            <ImageView
+                android:id="@+id/img_gps"
+                android:layout_width="@dimen/x20"
+                android:layout_height="@dimen/x20"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/x11"
+                android:src="@drawable/target" />
+
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/ll_ListViews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+           >
+
+
+            <Views.AnyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#55ACEF"
+                android:gravity="start"
+                android:paddingBottom="@dimen/x5"
+                android:paddingStart="@dimen/x10"
+                android:paddingTop="@dimen/x5"
+                android:text="Roadblock"
+                android:textColor="@color/white"
+                android:textSize="@dimen/x20"
+                app:typeface="@string/font_bold" />
+
+            <Views.ExpandedListView
+                android:id="@+id/lv_roadblock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/x8"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Views.AnyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#55ACEF"
+                android:gravity="start"
+                android:paddingBottom="@dimen/x5"
+                android:paddingStart="@dimen/x10"
+                android:paddingTop="@dimen/x5"
+                android:text="Bomb Blast"
+                android:textColor="@color/white"
+                android:textSize="@dimen/x20"
+                app:typeface="@string/font_bold" />
+
+            <Views.ExpandedListView
+                android:id="@+id/lv_Bombblast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/x8"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Views.AnyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#55ACEF"
+                android:gravity="start"
+                android:paddingBottom="@dimen/x5"
+                android:paddingStart="@dimen/x10"
+                android:paddingTop="@dimen/x5"
+                android:text="Heavy Traffic"
+                android:textColor="@color/white"
+                android:textSize="@dimen/x20"
+                app:typeface="@string/font_bold" />
+
+            <Views.ExpandedListView
+                android:id="@+id/lv_Heavytraffic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/x8"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Views.AnyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#55ACEF"
+                android:gravity="start"
+                android:paddingBottom="@dimen/x5"
+                android:paddingStart="@dimen/x10"
+                android:paddingTop="@dimen/x5"
+                android:text="Protest"
+                android:textColor="@color/white"
+                android:textSize="@dimen/x20"
+                app:typeface="@string/font_bold" />
+
+            <Views.ExpandedListView
+                android:id="@+id/lv_Protest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/x8"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Views.AnyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#55ACEF"
+                android:gravity="start"
+                android:paddingBottom="@dimen/x5"
+                android:paddingStart="@dimen/x10"
+                android:paddingTop="@dimen/x5"
+                android:text="Snatching"
+                android:textColor="@color/white"
+                android:textSize="@dimen/x20"
+                app:typeface="@string/font_bold" />
+
+            <Views.ExpandedListView
+                android:id="@+id/lv_Snatching"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/x8"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    tools:context="com.halaat.halaat.Activity.SignIn">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/x10"
+        android:gravity="center_vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/x10"
+        android:src="@drawable/logo" />
+    <Views.AnyTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HALAAT"
+        android:textColor="@color/black"
+        android:textSize="@dimen/x50"
+        android:alpha="0.5"
+        app:typeface="@string/font_bold"
+        />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_weight="0.85"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    style="@style/TextViewStyle"
+                    android:layout_weight="1"
+                    android:text="Email" />
+
+                <EditText
+                    android:id="@+id/email"
+                    style="@style/EditTextStyle"
+                    android:layout_weight="2"
+                    android:hint="Enter your Email here"
+                    android:textAlignment="viewStart"
+                    android:inputType="text" />
+
+            </LinearLayout>
+
+
+            <View style="@style/lineStyle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    style="@style/TextViewStyle"
+                    android:layout_weight="1"
+                    android:text="Password" />
+
+                <EditText
+                    android:id="@+id/pass"
+                    style="@style/EditTextStyle"
+                    android:layout_weight="2"
+                    android:hint="Password"
+                    android:textAlignment="viewStart"
+                    android:inputType="textPassword" />
+            </LinearLayout>
+
+            <View style="@style/lineStyle" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/facebook"
+                style="@style/ButtonStyle"
+                android:layout_width="0dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:background="#4267b2"
+                android:text="facebook" />
+
+            <Button
+                android:id="@+id/gmail"
+                style="@style/ButtonStyle"
+                android:layout_width="0dp"
+                android:layout_marginLeft="2dp"
+                android:layout_weight="1"
+                android:background="#f9402c"
+                android:text="Gmail" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/signin"
+            style="@style/ButtonStyle"
+            android:text="Signin" />
+
+
+        <Button
+            android:id="@+id/register"
+            style="@style/ButtonStyle"
+            android:text="Register" />
+    </LinearLayout>
+
+</RelativeLayout>

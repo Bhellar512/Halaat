@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Halaat</string>
+    <string name="facebook_app_id">526626274368995</string>
+    <string name="title_activity_location">Map</string>
+    <string name="title_activity_doctor_location">Map</string>
+    <string name="location">Location</string>
+    <string name="internet_not_connected">Internet is not Connected</string>
+    <string name="gps_question">Location is Disabled.Do you want to enable it</string>
+    <string name="gps_yes">Yes</string>
+    <string name="gps_no">No</string>
+
+    <string name="permission_denied">Permission denied</string>
+    <string name="permission_denied_contacts">The contact picker won\'t work without this permission. Are you sure you want to deny this permission?</string>
+    <string name="permission_deny">Deny</string>
+    <string name="permission_retry">Re-try</string>
+    <string name="typeface_not_found">Typeface %$1 not found, or could not be loaded.
+        Showing default typeface.</string>
+    <string name="app">AnyTextView</string>
+    <string name="assets_fonts_folder">fonts/</string>
+    <string name="font_normal">Poppins-Regular_1.ttf</string>
+    <string name="font_bold">Poppins-Bold_1.ttf</string>
+
+    <string-array name="halaatTypes">
+        <item>Roadblock</item>
+        <item>Bombblast</item>
+        <item>Heavytraffic</item>
+        <item>Protest</item>
+        <item>Snatching</item>
+    </string-array>
+    <string name="title_activity_social_tweets">SocialTweetsActivity</string>
+
+
+</resources>

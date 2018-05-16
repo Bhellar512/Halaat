@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+
+    tools:context="com.halaat.halaat.Activity.Register">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/white_logo" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_weight="0.85"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    style="@style/TextViewStyle"
+                    android:layout_weight="1"
+                    android:text="User Name" />
+
+                <EditText
+                    android:id="@+id/name"
+                    style="@style/EditTextStyle"
+                    android:layout_weight="2"
+                    android:gravity="start"
+                    android:hint="Enter Your Name"
+                    android:inputType="text" />
+
+            </LinearLayout>
+
+
+            <View style="@style/lineStyle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    style="@style/TextViewStyle"
+                    android:layout_weight="1"
+                    android:text="Email" />
+
+                <EditText
+                    android:id="@+id/email"
+                    style="@style/EditTextStyle"
+                    android:layout_weight="2"
+                    android:gravity="start"
+                    android:hint="Enter Your Email"
+                    android:inputType="textEmailAddress" />
+
+            </LinearLayout>
+
+
+            <View style="@style/lineStyle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    style="@style/TextViewStyle"
+                    android:layout_weight="1"
+                    android:text="Password" />
+
+                <EditText
+                    android:id="@+id/pass"
+                    style="@style/EditTextStyle"
+                    android:layout_weight="2"
+                    android:hint=" • • • • • • • • • • •"
+                    android:gravity="start"
+                    android:inputType="textPassword" />
+            </LinearLayout>
+
+            <View style="@style/lineStyle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    style="@style/TextViewStyle"
+                    android:layout_weight="1.2"
+                    android:text="Phone Number" />
+
+                <EditText
+                    android:id="@+id/mobile"
+                    style="@style/EditTextStyle"
+                    android:layout_weight="1.8"
+                    android:hint="Enter Number"
+                    android:gravity="start"
+                    android:inputType="text" />
+
+            </LinearLayout>
+
+
+            <View style="@style/lineStyle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    style="@style/TextViewStyle"
+                    android:layout_weight="1"
+                    android:text="City" />
+
+                <EditText
+                    android:id="@+id/city"
+                    style="@style/EditTextStyle"
+                    android:layout_weight="2"
+                    android:hint="City"
+                    android:gravity="start"
+                    android:inputType="text" />
+
+            </LinearLayout>
+
+            <View style="@style/lineStyle" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+            <Button
+                android:id="@+id/register"
+                style="@style/ButtonStyle"
+                android:text="Register" />
+    </LinearLayout>
+
+</RelativeLayout>

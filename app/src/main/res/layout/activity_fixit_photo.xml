@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.halaat.halaat.Activity.FixitPhoto">
+
+
+    <ImageButton
+        android:id="@+id/camera_button"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:src="@drawable/camera" />
+
+    <EditText
+        android:id="@+id/description"
+        style="@style/EditTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:gravity="center"
+        android:hint="Description" />
+
+    <Button
+        android:id="@+id/btn_viewPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x50"
+        android:layout_marginStart="@dimen/x8"
+        android:layout_marginEnd="@dimen/x8"
+      android:layout_marginBottom="@dimen/x5"
+        android:text="View Photos"
+        android:textColor="@color/white"
+        android:background="@color/black"/>
+
+    <Button
+        android:onClick="submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x50"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:layout_marginStart="@dimen/x8"
+        android:layout_marginEnd="@dimen/x8"
+        android:layout_marginBottom="@dimen/x8"
+        android:text="Submit" />
+</LinearLayout>
